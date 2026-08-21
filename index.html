@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Heilen Parra | QA Engineer</title>
+
+  <style>
+
+    /* =========================
+       CONFIGURACIÓN GENERAL
+    ========================== */
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+      background: #f7f9fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+
+    /* =========================
+       CONTENEDOR PRINCIPAL
+    ========================== */
+
+    .portfolio {
+      width: min(1200px, 92%);
+      margin: 50px auto;
+
+      display: grid;
+      grid-template-columns: 320px 1fr;
+
+      background: #ffffff;
+
+      border: 1px solid #e5e7eb;
+      border-radius: 20px;
+
+      overflow: hidden;
+
+      box-shadow:
+        0 10px 30px
+        rgba(15, 23, 42, 0.08);
+    }
+
+
+    /* =========================
+       BARRA LATERAL
+    ========================== */
+
+    .sidebar {
+      background:
+        linear-gradient(
+          180deg,
+          #0f172a 0%,
+          #172554 100%
+        );
+
+      color: white;
+
+      padding: 40px 30px;
+
+      display: flex;
+      flex-direction: column;
+
+      min-height: 100vh;
+    }
+
+
+    /* FOTO */
+
+    .profile-image {
+      width: 180px;
+      height: 180px;
+
+      margin: 0 auto 25px;
+
+      border-radius: 50%;
+
+      object-fit: cover;
+
+      border: 5px solid
+        rgba(255, 255, 255, 0.15);
+
+      background: #334155;
+    }
+
+
+    /* NOMBRE */
+
+    .sidebar h1 {
+      text-align: center;
+
+      font-size: 2rem;
+
+      line-height: 1.2;
+
+      margin-bottom: 10px;
+    }
+
+
+    /* ROL */
+
+    .role {
+      text-align: center;
+
+      color: #7dd3fc;
+
+      font-size: 0.9rem;
+
+      font-weight: bold;
+
+      letter-spacing: 1px;
+
+      margin-bottom: 30px;
+    }
+
+
+    /* DESCRIPCIÓN */
+
+    .sidebar-description {
+      color: #cbd5e1;
+
+      text-align: center;
+
+      font-size: 0.95rem;
+
+      margin-bottom: 35px;
+    }
+
+
+    /* NAVEGACIÓN */
+
+    .navigation {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      margin-bottom: 40px;
+    }
+
+    .navigation a {
+      color: #cbd5e1;
+
+      text-decoration: none;
+
+      padding: 10px 14px;
+
+      border-radius: 8px;
+
+      transition: 0.2s;
+    }
+
+    .navigation a:hover {
+      background:
+        rgba(255, 255, 255, 0.08);
+
+      color: white;
+    }
+
+
+    /* BOTONES */
+
+    .social-links {
+      margin-top: auto;
+
+      display: flex;
+      flex-direction: column;
+
+      gap: 12px;
+    }
+
+    .social-button {
+      display: block;
+
+      text-align: center;
+
+      text-decoration: none;
+
+      padding: 12px;
+
+      border-radius: 8px;
+
+      font-weight: bold;
+
+      transition: 0.2s;
+    }
+
+    .github {
+      background: white;
+      color: #0f172a;
+    }
+
+    .linkedin {
+      background: #0ea5e9;
+      color: white;
+    }
+
+    .social-button:hover {
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       CONTENIDO PRINCIPAL
+    ========================== */
+
+    .content {
+      padding: 70px 60px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero {
+      margin-bottom: 70px;
+    }
+
+    .hello {
+      color: #0ea5e9;
+
+      font-weight: bold;
+
+      font-size: 1rem;
+
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: clamp(
+        2.2rem,
+        5vw,
+        4.5rem
+      );
+
+      line-height: 1.1;
+
+      margin-bottom: 20px;
+
+      color: #0f172a;
+    }
+
+    .hero h2 span {
+      color: #2563eb;
+    }
+
+    .hero p {
+      max-width: 750px;
+
+      font-size: 1.1rem;
+
+      color: #475569;
+    }
+
+
+    /* =========================
+       SECCIONES
+    ========================== */
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    .section-title {
+      font-size: 1.8rem;
+
+      color: #0f172a;
+
+      margin-bottom: 15px;
+
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-line {
+      width: 60px;
+      height: 4px;
+
+      background: #0ea5e9;
+
+      border-radius: 10px;
+
+      margin-bottom: 30px;
+    }
+
+
+    /* =========================
+       SOBRE MÍ
+    ========================== */
+
+    .about-text {
+      color: #475569;
+
+      font-size: 1.05rem;
+
+      max-width: 800px;
+    }
+
+    .about-text p {
+      margin-bottom: 18px;
+    }
+
+
+    /* =========================
+       STACK TÉCNICO
+    ========================== */
+
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 12px;
+    }
+
+    .skill {
+      background: #eff6ff;
+
+      color: #1e40af;
+
+      padding: 10px 16px;
+
+      border-radius: 999px;
+
+      font-weight: bold;
+
+      font-size: 0.9rem;
+
+      border:
+        1px solid
+        #dbeafe;
+    }
+
+
+    /* =========================
+       PROYECTOS
+    ========================== */
+
+    .projects-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(
+          auto-fit,
+          minmax(260px, 1fr)
+        );
+
+      gap: 25px;
+    }
+
+    .project-card {
+      border:
+        1px solid
+        #e2e8f0;
+
+      border-radius: 14px;
+
+      overflow: hidden;
+
+      background: white;
+
+      transition: 0.25s;
+
+      display: flex;
+      flex-direction: column;
+    }
+
+    .project-card:hover {
+      transform: translateY(-6px);
+
+      box-shadow:
+        0 15px 35px
+        rgba(15, 23, 42, 0.1);
+    }
+
+
+    /* IMAGEN TEMPORAL */
+
+    .project-image {
+      height: 140px;
+
+      display: flex;
+
+      align-items: center;
+      justify-content: center;
+
+      font-size: 3rem;
+
+      background:
+        linear-gradient(
+          135deg,
+          #e0f2fe,
+          #dbeafe
+        );
+    }
+
+
+    .project-content {
+      padding: 25px;
+    }
+
+    .project-content h4 {
+      font-size: 1.2rem;
+
+      margin-bottom: 10px;
+
+      color: #0f172a;
+    }
+
+    .project-content p {
+      color: #64748b;
+
+      font-size: 0.95rem;
+
+      margin-bottom: 20px;
+    }
+
+    .project-tags {
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+    }
+
+    .project-tags span {
+      font-size: 0.75rem;
+
+      background: #f1f5f9;
+
+      padding: 5px 8px;
+
+      border-radius: 5px;
+
+      color: #475569;
+    }
+
+
+    /* =========================
+       CONTACTO
+    ========================== */
+
+    .contact-box {
+      background:
+        linear-gradient(
+          135deg,
+          #0f172a,
+          #172554
+        );
+
+      color: white;
+
+      padding: 40px;
+
+      border-radius: 16px;
+    }
+
+    .contact-box p {
+      color: #cbd5e1;
+
+      margin-bottom: 20px;
+    }
+
+    .contact-email {
+      color: #7dd3fc;
+
+      text-decoration: none;
+
+      font-weight: bold;
+    }
+
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media (max-width: 850px) {
+
+      .portfolio {
+        grid-template-columns: 1fr;
+
+        margin: 0;
+
+        width: 100%;
+
+        border-radius: 0;
+      }
+
+      .sidebar {
+        min-height: auto;
+      }
+
+      .content {
+        padding: 50px 25px;
+      }
+
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <main class="portfolio">
+
+
+    <!-- ======================
+         BARRA LATERAL
+    ======================= -->
+
+    <aside class="sidebar">
+
+      <!-- FOTO TEMPORAL -->
+      <img
+        src="https://via.placeholder.com/300"
+        alt="Foto profesional de Heilen Parra"
+        class="profile-image"
+      >
+
+      <h1>
+        Heilen Parra
+      </h1>
+
+
+      <p class="role">
+        QA ENGINEER
+      </p>
+
+
+      <p class="sidebar-description">
+        Pruebas manuales, API y automatización enfocadas
+        en la calidad y confiabilidad del software.
+      </p>
+
+
+      <nav class="navigation">
+
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#habilidades">
+          Stack técnico
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+      </nav>
+
+
+      <div class="social-links">
+
+        <a
+          href="https://github.com/heilenparra"
+          target="_blank"
+          class="social-button github"
+        >
+          GitHub
+        </a>
+
+
+        <a
+          href="#"
+          target="_blank"
+          class="social-button linkedin"
+        >
+          LinkedIn
+        </a>
+
+      </div>
+
+    </aside>
+
+
+
+    <!-- ======================
+         CONTENIDO PRINCIPAL
+    ======================= -->
+
+    <div class="content">
+
+
+      <!-- HERO -->
+
+      <header class="hero">
+
+        <p class="hello">
+          👋 HOLA, SOY
+        </p>
+
+        <h2>
+          Heilen <span>Parra</span>
+        </h2>
+
+        <p>
+          QA Engineer en formación con experiencia práctica
+          en pruebas manuales, pruebas de API y automatización.
+          Me enfoco en analizar requisitos, diseñar pruebas,
+          identificar defectos y contribuir a la calidad del software.
+        </p>
+
+      </header>
+
+
+
+      <!-- SOBRE MÍ -->
+
+      <section id="sobre-mi">
+
+        <h3 class="section-title">
+          👩‍💻 Sobre mí
+        </h3>
+
+        <div class="section-line"></div>
+
+
+        <div class="about-text">
+
+          <p>
+            Soy una profesional en formación como
+            <strong>QA Engineer</strong>, con experiencia práctica
+            en pruebas manuales, pruebas de API y automatización.
+            Me interesa comprender cómo funciona un producto,
+            analizar sus requisitos e identificar riesgos antes
+            de que afecten al usuario.
+          </p>
+
+
+          <p>
+            He trabajado en el diseño y ejecución de casos de prueba,
+            reportes de bugs, pruebas funcionales y validaciones de API,
+            utilizando herramientas como
+            <strong>Postman, Jira, Python y Selenium</strong>.
+          </p>
+
+
+          <p>
+            Me considero una persona analítica, curiosa y comprometida
+            con la mejora continua. Busco seguir desarrollándome
+            en Quality Assurance y aportar a la creación de productos
+            digitales confiables y de calidad.
+          </p>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- HABILIDADES -->
+
+      <section id="habilidades">
+
+        <h3 class="section-title">
+          🛠️ Stack técnico
+        </h3>
+
+        <div class="section-line"></div>
+
+
+        <div class="skills-container">
+
+          <span class="skill">
+            Pruebas manuales
+          </span>
+
+          <span class="skill">
+            Pruebas de API
+          </span>
+
+          <span class="skill">
+            Postman
+          </span>
+
+          <span class="skill">
+            Jira
+          </span>
+
+          <span class="skill">
+            Python
+          </span>
+
+          <span class="skill">
+            Selenium
+          </span>
+
+          <span class="skill">
+            SQL
+          </span>
+
+          <span class="skill">
+            Git & GitHub
+          </span>
+
+          <span class="skill">
+            Diseño de casos de prueba
+          </span>
+
+          <span class="skill">
+            Reporte de bugs
+          </span>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- PROYECTOS -->
+
+      <section id="proyectos">
+
+        <h3 class="section-title">
+          📁 Proyectos destacados
+        </h3>
+
+        <div class="section-line"></div>
+
+
+        <div class="projects-grid">
+
+
+          <!-- PROYECTO 1 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              🚕
+            </div>
+
+
+            <div class="project-content">
+
+              <h4>
+                Urban Routes
+              </h4>
+
+
+              <p>
+                Pruebas manuales de una aplicación web,
+                incluyendo análisis de requisitos, diseño
+                de casos de prueba y reporte de bugs.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>Manual Testing</span>
+
+                <span>Jira</span>
+
+                <span>Web</span>
+
+                <span>Mobile</span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROYECTO 2 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              🛒
+            </div>
+
+
+            <div class="project-content">
+
+              <h4>
+                Urban Grocers
+              </h4>
+
+
+              <p>
+                Validación de funcionalidades y pruebas de API,
+                incluyendo escenarios positivos, negativos y
+                validación de reglas de negocio.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>API Testing</span>
+
+                <span>Postman</span>
+
+                <span>Python</span>
+
+                <span>Pytest</span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+
+          <!-- PROYECTO 3 -->
+
+          <article class="project-card">
+
+            <div class="project-image">
+              🤖
+            </div>
+
+
+            <div class="project-content">
+
+              <h4>
+                Automatización QA
+              </h4>
+
+
+              <p>
+                Automatización de flujos críticos para validar
+                funcionalidades de aplicaciones web y mejorar
+                la eficiencia de las pruebas.
+              </p>
+
+
+              <div class="project-tags">
+
+                <span>Selenium</span>
+
+                <span>Python</span>
+
+                <span>Automation</span>
+
+              </div>
+
+            </div>
+
+          </article>
+
+
+        </div>
+
+      </section>
+
+
+
+      <!-- CONTACTO -->
+
+      <section id="contacto">
+
+        <h3 class="section-title">
+          📬 Contacto
+        </h3>
+
+        <div class="section-line"></div>
+
+
+        <div class="contact-box">
+
+          <h3>
+            ¿Hablamos?
+          </h3>
+
+          <p>
+            Estoy abierta a oportunidades para continuar
+            desarrollándome profesionalmente en el área
+            de Quality Assurance.
+          </p>
+
+
+          <a
+            href="mailto:TU_CORREO_AQUI"
+            class="contact-email"
+          >
+            ✉️ Escríbeme por correo
+          </a>
+
+        </div>
+
+      </section>
+
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
