@@ -1,352 +1,495 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Heilen Parra | QA Engineer</title>
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
 
   <meta
     name="description"
-    content="Portafolio profesional de Heilen Parra, QA Engineer."
+    content="Portafolio profesional de Heilen Parra, QA Engineer especializada en pruebas manuales, API testing y aseguramiento de calidad."
   >
+
+  <title>Heilen Parra | QA Engineer</title>
 
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <!-- NAVEGACIÓN -->
+  <!-- =========================
+       ENCABEZADO
+  ========================== -->
 
-  <header>
-    <nav class="container">
+  <header class="header">
 
-      <a href="#" class="logo">HP.</a>
+    <div class="container header-content">
 
-      <div class="nav-links">
-        <a href="#sobre-mi">Sobre mí</a>
-        <a href="#habilidades">Habilidades</a>
-        <a href="#proyectos">Proyectos</a>
-        <a href="#contacto">Contacto</a>
-      </div>
+      <a href="#inicio" class="logo">
+        HP<span>.</span>
+      </a>
 
-    </nav>
+      <nav class="nav">
+
+        <a href="#sobre-mi">
+          Sobre mí
+        </a>
+
+        <a href="#habilidades">
+          Habilidades
+        </a>
+
+        <a href="#proyectos">
+          Proyectos
+        </a>
+
+        <a href="#contacto">
+          Contacto
+        </a>
+
+      </nav>
+
+    </div>
+
   </header>
 
 
-  <!-- PRESENTACIÓN -->
+  <!-- =========================
+       CONTENIDO PRINCIPAL
+  ========================== -->
 
   <main>
 
-    <section class="hero">
 
-      <div class="container hero-content">
+    <!-- =========================
+         PRESENTACIÓN
+    ========================== -->
 
-        <div>
+    <section id="inicio" class="hero">
 
-          <span class="badge">
-            Disponible para oportunidades en QA
-          </span>
+      <div class="container portfolio-layout">
 
-          <h1>
-            Hola, soy<br>
-            <span>Heilen Parra</span>
-          </h1>
 
-          <p>
-            QA Engineer enfocada en pruebas de software, aseguramiento
-            de calidad y mejora de productos digitales.
-          </p>
+        <!-- PERFIL LATERAL -->
 
-          <div class="hero-buttons">
+        <aside class="profile-card">
 
-            <a href="#proyectos" class="btn btn-primary">
-              Ver proyectos
-            </a>
+          <div class="profile-image-container">
 
-            <a href="https://www.linkedin.com/"
-               target="_blank"
-               class="btn btn-secondary">
-              LinkedIn
-            </a>
+            <img
+              src="assets/perfil.jpg.png"
+              alt="Foto profesional de Heilen Parra"
+              class="profile-image"
+            >
 
           </div>
 
-        </div>
 
+          <div class="profile-info">
 
-        <!-- FOTO: por ahora dejamos un placeholder -->
+            <h2>
+              Heilen Parra
+            </h2>
 
-        <div class="profile-card">
-
-          <div class="profile-placeholder">
-            HP
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- SOBRE MÍ -->
-
-    <section id="sobre-mi" class="section-light">
-
-      <div class="container">
-
-        <span class="section-label">
-          Perfil profesional
-        </span>
-
-        <h2 class="section-title">
-          Sobre mí
-        </h2>
-
-        <p class="section-description">
-          Soy QA Engineer en formación, con experiencia en pruebas
-          funcionales, pruebas de API, análisis de requisitos, diseño
-          de casos de prueba y documentación de incidencias.
-        </p>
-
-
-        <div class="about-grid">
-
-          <div class="about-text">
-
-            <p>
-              Me interesa asegurar que los productos digitales funcionen
-              correctamente y que los requisitos del negocio se traduzcan
-              en experiencias confiables para los usuarios.
+            <p class="profile-role">
+              QA ENGINEER
             </p>
 
-            <br>
-
-            <p>
-              Trabajo desde una perspectiva analítica, identificando
-              riesgos, inconsistencias y posibles errores antes de que
-              lleguen al usuario final.
+            <p class="profile-description">
+              Pruebas manuales, API y automatización enfocadas en la calidad y confiabilidad del software.
             </p>
 
+
+            <div class="profile-links">
+
+              <a
+                href="#contacto"
+                class="text-link"
+              >
+                Contacto
+              </a>
+
+              <a
+                href="https://github.com/heilenparra"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-link"
+              >
+                GitHub
+              </a>
+
+            </div>
+
           </div>
 
+        </aside>
 
-          <div class="about-highlights">
 
-            <div class="highlight">
-              <strong>QA Manual</strong><br>
-              Pruebas funcionales y exploratorias.
-            </div>
+        <!-- CONTENIDO PRINCIPAL -->
 
-            <div class="highlight">
-              <strong>API Testing</strong><br>
-              Validación de servicios y respuestas.
-            </div>
+        <div class="portfolio-content">
 
-            <div class="highlight">
-              <strong>Análisis</strong><br>
-              Requisitos, casos de prueba y bugs.
-            </div>
 
-          </div>
+          <!-- INTRODUCCIÓN -->
 
-        </div>
+          <section class="intro-section">
 
-      </div>
+            <p class="intro-label">
+              👋 HOLA, SOY
+            </p>
 
-    </section>
+            <h1>
+              Heilen
+              <span>Parra</span>
+            </h1>
 
+            <p class="intro-text">
+              QA Engineer en formación, con experiencia práctica en pruebas manuales, pruebas de API y automatización. Me interesa analizar productos digitales desde la perspectiva del usuario, identificar riesgos y contribuir a que el software sea más confiable y funcional.
+            </p>
 
-    <!-- HABILIDADES -->
+          </section>
 
-    <section id="habilidades">
 
-      <div class="container">
+          <!-- SOBRE MÍ -->
 
-        <span class="section-label">
-          Herramientas y conocimientos
-        </span>
-
-        <h2 class="section-title">
-          Habilidades
-        </h2>
-
-        <p class="section-description">
-          Tecnologías y herramientas que utilizo en mi proceso
-          de aprendizaje y desarrollo profesional.
-        </p>
-
-
-        <div class="skills-grid">
-
-          <div class="skill">QA Manual</div>
-          <div class="skill">Postman</div>
-          <div class="skill">Jira</div>
-          <div class="skill">SQL</div>
-          <div class="skill">API Testing</div>
-          <div class="skill">Git & GitHub</div>
-          <div class="skill">Selenium</div>
-          <div class="skill">Python</div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- PROYECTOS -->
-
-    <section id="proyectos" class="section-light">
-
-      <div class="container">
-
-        <span class="section-label">
-          Mi trabajo
-        </span>
-
-        <h2 class="section-title">
-          Proyectos destacados
-        </h2>
-
-        <p class="section-description">
-          Algunos proyectos de testing y desarrollo en los que he
-          trabajado.
-        </p>
-
-
-        <div class="projects-grid">
-
-
-          <!-- PROYECTO 1 -->
-
-          <article class="project-card">
-
-            <div class="project-top"></div>
-
-            <div class="project-content">
-
-              <h3>
-                Urban Routes
-              </h3>
-
-              <p>
-                Proyecto de pruebas funcionales y validación de la
-                funcionalidad de reserva de vehículos.
-              </p>
-
-              <div class="tags">
-                <span class="tag">QA</span>
-                <span class="tag">Testing</span>
-                <span class="tag">Jira</span>
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- PROYECTO 2 -->
-
-          <article class="project-card">
-
-            <div class="project-top"></div>
-
-            <div class="project-content">
-
-              <h3>
-                API Testing
-              </h3>
-
-              <p>
-                Validación de endpoints, parámetros, cuerpos de solicitud
-                y respuestas utilizando Postman.
-              </p>
-
-              <div class="tags">
-                <span class="tag">Postman</span>
-                <span class="tag">API</span>
-                <span class="tag">JSON</span>
-              </div>
-
-            </div>
-
-          </article>
-
-
-          <!-- PROYECTO 3 -->
-
-          <article class="project-card">
-
-            <div class="project-top"></div>
-
-            <div class="project-content">
-
-              <h3>
-                VISUALSC
-              </h3>
-
-              <p>
-                Plataforma digital inclusiva orientada a mejorar la
-                accesibilidad mediante Lengua de Señas Colombiana.
-              </p>
-
-              <div class="tags">
-                <span class="tag">React</span>
-                <span class="tag">Firebase</span>
-                <span class="tag">Accesibilidad</span>
-              </div>
-
-            </div>
-
-          </article>
-
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- CONTACTO -->
-
-    <section id="contacto">
-
-      <div class="container">
-
-        <div class="contact-box">
-
-          <h2>
-            ¿Trabajamos juntos?
-          </h2>
-
-          <p>
-            Puedes encontrarme en LinkedIn o contactar conmigo
-            a través de GitHub.
-          </p>
-
-          <a
-            href="https://github.com/heilenparra"
-            target="_blank"
-            class="btn"
+          <section
+            id="sobre-mi"
+            class="portfolio-section"
           >
-            Ver mi GitHub
-          </a>
+
+            <div class="section-title">
+
+              <span class="section-icon">
+                👩‍💻
+              </span>
+
+              <h2>
+                Sobre mí
+              </h2>
+
+            </div>
+
+
+            <div class="section-content">
+
+              <p>
+                Soy <strong>QA Engineer en formación</strong> y cuento con experiencia práctica en pruebas manuales, pruebas de API y validación de productos digitales. Me interesa comprender cómo funciona un sistema, analizar sus requisitos e identificar riesgos antes de que afecten la experiencia del usuario.
+              </p>
+
+
+              <p>
+                He trabajado en el diseño y ejecución de <strong>casos de prueba</strong>, creación de <strong>checklists</strong>, documentación de <strong>bugs</strong>, validación de interfaces y pruebas de API. También tengo experiencia utilizando herramientas como <strong>Postman, Jira, SQL, Git y GitHub</strong>, y continúo fortaleciendo mis conocimientos en automatización.
+              </p>
+
+
+              <p>
+                Me considero una persona analítica, curiosa y comprometida con la mejora continua. Disfruto entender los problemas desde diferentes perspectivas y aportar a la construcción de productos digitales con mayor calidad, confiabilidad y valor para sus usuarios.
+              </p>
+
+            </div>
+
+          </section>
+
+
+          <!-- HABILIDADES -->
+
+          <section
+            id="habilidades"
+            class="portfolio-section"
+          >
+
+            <div class="section-title">
+
+              <span class="section-icon">
+                🧪
+              </span>
+
+              <h2>
+                Habilidades técnicas
+              </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+              <div class="skill-group">
+
+                <h3>
+                  Testing
+                </h3>
+
+                <ul>
+                  <li>Pruebas funcionales</li>
+                  <li>Diseño de casos de prueba</li>
+                  <li>Pruebas de regresión</li>
+                  <li>Pruebas exploratorias</li>
+                  <li>Reporte y documentación de bugs</li>
+                </ul>
+
+              </div>
+
+
+              <div class="skill-group">
+
+                <h3>
+                  API Testing
+                </h3>
+
+                <ul>
+                  <li>Postman</li>
+                  <li>REST APIs</li>
+                  <li>Métodos HTTP</li>
+                  <li>Validación de requests y responses</li>
+                  <li>Códigos de estado HTTP</li>
+                </ul>
+
+              </div>
+
+
+              <div class="skill-group">
+
+                <h3>
+                  Herramientas
+                </h3>
+
+                <ul>
+                  <li>Jira</li>
+                  <li>Git y GitHub</li>
+                  <li>SQL</li>
+                  <li>Postman</li>
+                  <li>DevTools</li>
+                </ul>
+
+              </div>
+
+
+              <div class="skill-group">
+
+                <h3>
+                  Automatización
+                </h3>
+
+                <ul>
+                  <li>Selenium</li>
+                  <li>Python</li>
+                  <li>Automatización de pruebas</li>
+                  <li>Validación de flujos</li>
+                  <li>Aprendizaje continuo</li>
+                </ul>
+
+              </div>
+
+
+            </div>
+
+          </section>
+
+
+          <!-- PROYECTOS -->
+
+          <section
+            id="proyectos"
+            class="portfolio-section"
+          >
+
+            <div class="section-title">
+
+              <span class="section-icon">
+                📂
+              </span>
+
+              <h2>
+                Proyectos
+              </h2>
+
+            </div>
+
+
+            <p class="section-intro">
+              Algunos proyectos y ejercicios en los que he aplicado conocimientos de aseguramiento de calidad, diseño de pruebas, pruebas de API y documentación de defectos.
+            </p>
+
+
+            <div class="projects-grid">
+
+
+              <!-- PROYECTO 1 -->
+
+              <article class="project-card">
+
+                <p class="project-category">
+                  PRUEBAS FUNCIONALES
+                </p>
+
+                <h3>
+                  Urban Routes
+                </h3>
+
+                <p>
+                  Proyecto de pruebas funcionales enfocado en la validación de una aplicación de reserva de automóviles, diseño de casos de prueba, creación de checklists y documentación de defectos.
+                </p>
+
+                <div class="project-tags">
+
+                  <span>Manual Testing</span>
+
+                  <span>Jira</span>
+
+                  <span>Bug Reports</span>
+
+                </div>
+
+              </article>
+
+
+              <!-- PROYECTO 2 -->
+
+              <article class="project-card">
+
+                <p class="project-category">
+                  API TESTING
+                </p>
+
+                <h3>
+                  Urban Grocers API
+                </h3>
+
+                <p>
+                  Proyecto enfocado en pruebas de API utilizando Postman, validación de requests, responses, códigos de estado y análisis de diferentes escenarios positivos y negativos.
+                </p>
+
+                <div class="project-tags">
+
+                  <span>Postman</span>
+
+                  <span>REST API</span>
+
+                  <span>HTTP</span>
+
+                </div>
+
+              </article>
+
+
+              <!-- PROYECTO 3 -->
+
+              <article class="project-card">
+
+                <p class="project-category">
+                  AUTOMATIZACIÓN
+                </p>
+
+                <h3>
+                  Automatización de pruebas
+                </h3>
+
+                <p>
+                  Prácticas de automatización enfocadas en la validación de flujos funcionales mediante herramientas y scripts de prueba.
+                </p>
+
+                <div class="project-tags">
+
+                  <span>Selenium</span>
+
+                  <span>Python</span>
+
+                  <span>Automation</span>
+
+                </div>
+
+              </article>
+
+
+            </div>
+
+          </section>
+
+
+          <!-- CONTACTO -->
+
+          <section
+            id="contacto"
+            class="portfolio-section contact-section"
+          >
+
+            <div class="section-title">
+
+              <span class="section-icon">
+                📬
+              </span>
+
+              <h2>
+                Contacto
+              </h2>
+
+            </div>
+
+
+            <div class="contact-content">
+
+              <p>
+                Actualmente me encuentro fortaleciendo mi perfil profesional en Quality Assurance y estoy abierta a oportunidades donde pueda seguir aprendiendo y aportando al desarrollo de productos digitales de calidad.
+              </p>
+
+
+              <div class="contact-links">
+
+                <a
+                  href="https://github.com/heilenparra"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
+                </a>
+
+
+                <!--
+                  CUANDO TENGAMOS TU URL REAL DE LINKEDIN
+                  REEMPLAZAMOS EL # POR EL ENLACE
+                -->
+
+                <a
+                  href="#"
+                >
+                  LinkedIn
+                </a>
+
+
+                <!--
+                  CUANDO DEFINAMOS EL CORREO QUE QUIERES
+                  MOSTRAR EN EL PORTAFOLIO
+                  AGREGAMOS:
+                  href="mailto:tu-correo@email.com"
+                -->
+
+              </div>
+
+            </div>
+
+          </section>
+
 
         </div>
 
       </div>
 
     </section>
+
 
   </main>
 
 
-  <!-- FOOTER -->
+  <!-- =========================
+       FOOTER
+  ========================== -->
 
-  <footer>
+  <footer class="footer">
 
     <div class="container">
 
@@ -358,5 +501,7 @@
 
   </footer>
 
+
 </body>
+
 </html>
