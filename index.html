@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
+
     <meta
         name="viewport"
         content="width=device-width, initial-scale=1.0"
@@ -15,79 +15,139 @@
 
     <title>Heilen Parra | QA Engineer</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
 
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Font Awesome -->
     <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="style.css"
     >
 </head>
 
 <body>
 
-    <div class="portfolio-container">
+    <div class="page-shell">
 
-        <!-- =========================
+        <!-- =========================================
              SIDEBAR
-        ========================== -->
+        ========================================== -->
 
-        <aside
-            class="sidebar"
-            aria-label="Perfil y navegación"
-        >
+        <aside class="sidebar">
 
-            <div class="profile">
+            <div class="profile-block">
 
-                <h1 class="profile-name">
-                    Heilen Parra
-                </h1>
-
-                <div class="profile-image-container">
+                <div class="profile-avatar">
 
                     <img
                         src="assets/perfil (1).png"
                         alt="Foto profesional de Heilen Parra"
-                        class="profile-image"
                     >
 
                 </div>
 
-                <p class="profile-description">
-                    Bienvenido/a. Aquí encontrarás una muestra clara de mi trabajo en QA.
-                </p>
+                <div class="profile-copy">
 
-                <div
-                    class="profile-links"
-                    aria-label="Enlaces principales"
-                >
+                    <p class="profile-label">
+                        PORTAFOLIO PROFESIONAL
+                    </p>
 
-                    <a
-                        href="https://github.com/heilenparra"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="GitHub de Heilen Parra"
-                    >
-                        <i
-                            class="fa-brands fa-github"
-                            aria-hidden="true"
-                        ></i>
-                        GitHub
-                    </a>
+                    <h1>
+                        Heilen
+                        <span>Parra</span>
+                    </h1>
 
-                    <a href="#contacto">
-
-                        <i
-                            class="fa-solid fa-envelope"
-                            aria-hidden="true"
-                        ></i>
-
-                        Contacto
-
-                    </a>
+                    <p class="profile-role">
+                        QA Engineer
+                    </p>
 
                 </div>
 
             </div>
+
+
+            <!-- CONTACTO -->
+
+            <div class="sidebar-contact">
+
+                <a
+                    href="mailto:heilenparra03@gmail.com"
+                    class="sidebar-action"
+                >
+
+                    <i
+                        class="fa-solid fa-envelope"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        Correo
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://www.linkedin.com/in/heilenparra/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sidebar-action"
+                >
+
+                    <i
+                        class="fa-brands fa-linkedin-in"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        LinkedIn
+                    </span>
+
+                </a>
+
+
+                <a
+                    href="https://github.com/heilenparra"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="sidebar-action"
+                >
+
+                    <i
+                        class="fa-brands fa-github"
+                        aria-hidden="true"
+                    ></i>
+
+                    <span>
+                        GitHub
+                    </span>
+
+                </a>
+
+            </div>
+
+
+            <!-- NAVEGACIÓN -->
 
             <nav
                 class="sidebar-nav"
@@ -95,212 +155,296 @@
             >
 
                 <a href="#sobre-mi">
+
+                    <span class="nav-number">
+                        01
+                    </span>
+
                     Sobre mí
+
                 </a>
+
 
                 <a href="#habilidades">
+
+                    <span class="nav-number">
+                        02
+                    </span>
+
                     Habilidades
+
                 </a>
+
 
                 <a href="#proyectos">
-                    Proyectos destacados
+
+                    <span class="nav-number">
+                        03
+                    </span>
+
+                    Proyectos
+
                 </a>
+
 
                 <a href="#cv">
+
+                    <span class="nav-number">
+                        04
+                    </span>
+
                     CV
+
                 </a>
 
+
                 <a href="#contacto">
+
+                    <span class="nav-number">
+                        05
+                    </span>
+
                     Contacto
+
                 </a>
 
             </nav>
 
+
             <div class="sidebar-footer">
 
-                <p>
-                    © 2026 Heilen Parra
-                </p>
+                <span class="status-dot"></span>
+
+                Disponible para nuevas oportunidades
 
             </div>
 
         </aside>
 
 
-        <!-- =========================
+        <!-- =========================================
              CONTENIDO PRINCIPAL
-        ========================== -->
+        ========================================== -->
 
         <main class="main-content">
 
 
-            <!-- =========================
-                 BIENVENIDA
-            ========================== -->
+            <!-- =====================================
+                 HERO
+            ========================================== -->
 
             <section
-                class="welcome-section"
-                aria-labelledby="portafolio-title"
+                class="hero"
+                aria-labelledby="hero-title"
             >
 
-                <h2 id="portafolio-title">
-                    Bienvenido/a a mi portafolio
+                <div class="hero-eyebrow">
+
+                    <span class="eyebrow-line"></span>
+
+                    QA ENGINEER
+
+                    <span class="eyebrow-line"></span>
+
+                </div>
+
+
+                <h2 id="hero-title">
+
+                    Calidad que se
+                    <span>piensa, prueba y mejora.</span>
+
                 </h2>
 
-                <p class="role-title">
-                    QA Engineer · Pruebas funcionales · API Testing
+
+                <p class="hero-description">
+
+                    QA Engineer enfocada en pruebas funcionales,
+                    diseño de casos de prueba y validación de APIs,
+                    con interés en crear productos digitales más
+                    confiables y accesibles.
+
                 </p>
 
-                <div
-                    class="quick-links"
-                    aria-label="Contacto rápido"
-                >
 
-                    <!-- CORREO -->
+                <div class="hero-tags">
 
-                    <a
-                        href="mailto:heilenparra03@gmail.com"
-                        class="link-button"
-                    >
+                    <span>
+                        <i class="fa-solid fa-bug"></i>
+                        Functional Testing
+                    </span>
 
-                        <i
-                            class="fa-solid fa-envelope"
-                            aria-hidden="true"
-                        ></i>
+                    <span>
+                        <i class="fa-solid fa-flask"></i>
+                        Test Design
+                    </span>
 
-                        Correo
-
-                    </a>
-
-
-                    <!-- LINKEDIN -->
-
-                    <a
-                        href="https://www.linkedin.com/in/heilenparra/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="link-button"
-                    >
-
-                        <i
-                            class="fa-brands fa-linkedin"
-                            aria-hidden="true"
-                        ></i>
-
-                        LinkedIn
-
-                    </a>
-
-
-                    <!-- GITHUB -->
-
-                    <a
-                        href="https://github.com/heilenparra"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="link-button"
-                    >
-
-                        <i
-                            class="fa-brands fa-github"
-                            aria-hidden="true"
-                        ></i>
-
-                        GitHub
-
-                    </a>
+                    <span>
+                        <i class="fa-solid fa-code"></i>
+                        API Testing
+                    </span>
 
                 </div>
 
             </section>
 
 
-            <!-- =========================
-                 ÍNDICE
-            ========================== -->
-
-            <section
-                class="index-section"
-                aria-labelledby="indice-title"
-            >
-
-                <h2 id="indice-title">
-                    Índice
-                </h2>
-
-                <ol class="index-list">
-
-                    <li>
-                        <a href="#sobre-mi">
-                            Sobre mí
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#habilidades">
-                            Habilidades
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#proyectos">
-                            Proyectos destacados
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#cv">
-                            CV
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#contacto">
-                            Contacto
-                        </a>
-                    </li>
-
-                </ol>
-
-            </section>
-
-
-            <!-- =========================
+            <!-- =====================================
                  SOBRE MÍ
-            ========================== -->
+            ========================================== -->
 
             <section
                 id="sobre-mi"
                 class="content-section"
-                aria-labelledby="sobre-mi-title"
-            >
-
-                <h2 id="sobre-mi-title">
-                    Sobre mí
-                </h2>
-
-                <p class="text-block">
-                    Soy Heilen Parra, QA Engineer y Contadora Pública. Mi trayectoria combina experiencia en análisis de procesos, investigación y productos digitales con formación y experiencia práctica en pruebas funcionales, diseño de casos de prueba y API Testing. Trabajo en el análisis de requisitos y la validación de productos digitales, utilizando herramientas y técnicas de prueba para identificar defectos y comportamientos no esperados.
-                </p>
-
-            </section>
-
-
-            <!-- =========================
-                 HABILIDADES
-            ========================== -->
-
-            <section
-                id="habilidades"
-                class="content-section"
-                aria-labelledby="habilidades-title"
             >
 
                 <div class="section-heading">
 
-                    <h2 id="habilidades-title">
-                        Habilidades
-                    </h2>
+                    <span class="section-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <p class="section-kicker">
+                            PERFIL PROFESIONAL
+                        </p>
+
+                        <h2>
+                            Sobre mí
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-layout">
+
+                    <div class="about-text">
+
+                        <p>
+
+                            Soy una profesional orientada al
+                            aseguramiento de la calidad, el análisis
+                            y la mejora continua de productos digitales.
+
+                        </p>
+
+                        <p>
+
+                            Me interesa comprender cómo funciona un
+                            producto desde la perspectiva del usuario
+                            y traducir los requisitos en escenarios
+                            claros, verificables y medibles.
+
+                        </p>
+
+                        <p>
+
+                            Tengo experiencia en diseño y ejecución de
+                            pruebas funcionales, análisis de requisitos,
+                            documentación de defectos y validación de APIs.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="about-highlights">
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-list-check"></i>
+
+                            <div>
+
+                                <h3>
+                                    Enfoque estructurado
+                                </h3>
+
+                                <p>
+                                    Análisis de requisitos,
+                                    riesgos y escenarios.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+
+                            <div>
+
+                                <h3>
+                                    Pensamiento analítico
+                                </h3>
+
+                                <p>
+                                    Identificación de inconsistencias
+                                    y oportunidades de mejora.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+
+                        <article class="highlight-card">
+
+                            <i class="fa-solid fa-arrows-rotate"></i>
+
+                            <div>
+
+                                <h3>
+                                    Mejora continua
+                                </h3>
+
+                                <p>
+                                    Iteración, aprendizaje y
+                                    optimización constante.
+                                </p>
+
+                            </div>
+
+                        </article>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- =====================================
+                 HABILIDADES
+            ========================================== -->
+
+            <section
+                id="habilidades"
+                class="content-section"
+            >
+
+                <div class="section-heading">
+
+                    <span class="section-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <p class="section-kicker">
+                            HERRAMIENTAS Y CONOCIMIENTOS
+                        </p>
+
+                        <h2>
+                            Habilidades
+                        </h2>
+
+                    </div>
 
                 </div>
 
@@ -308,146 +452,166 @@
                 <div class="skills-grid">
 
 
-                    <!-- PRUEBAS FUNCIONALES -->
+                    <!-- QA -->
 
-                    <article class="skill-card">
+                    <article class="skill-group">
 
-                        <h3>
-                            Pruebas funcionales
-                        </h3>
+                        <div class="skill-group-header">
 
-                        <div
-                            class="chip-list"
-                            aria-label="Habilidades de pruebas funcionales"
-                        >
+                            <div class="skill-icon qa">
 
-                            <span class="chip">
+                                <i class="fa-solid fa-bug"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Testing
+                                </h3>
+
+                                <p>
+                                    Diseño y ejecución de pruebas
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-chips">
+
+                            <span>
                                 Functional Testing
                             </span>
 
-                            <span class="chip">
-                                Regression Testing
+                            <span>
+                                Test Cases
                             </span>
 
-                            <span class="chip">
+                            <span>
                                 Exploratory Testing
                             </span>
 
-                            <span class="chip">
-                                UI Testing
+                            <span>
+                                Smoke Testing
                             </span>
 
-                        </div>
-
-                    </article>
-
-
-                    <!-- DISEÑO DE PRUEBAS -->
-
-                    <article class="skill-card">
-
-                        <h3>
-                            Diseño de pruebas
-                        </h3>
-
-                        <div
-                            class="chip-list"
-                            aria-label="Habilidades de diseño de pruebas"
-                        >
-
-                            <span class="chip">
-                                Test Case Design
+                            <span>
+                                Regression Testing
                             </span>
 
-                            <span class="chip">
-                                Equivalence Partitioning
-                            </span>
-
-                            <span class="chip">
-                                Boundary Value Analysis
-                            </span>
-
-                            <span class="chip">
-                                Decision Tables
-                            </span>
-
-                            <span class="chip">
-                                Pairwise Testing
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- API TESTING -->
-
-                    <article class="skill-card">
-
-                        <h3>
-                            API Testing
-                        </h3>
-
-                        <div
-                            class="chip-list"
-                            aria-label="Habilidades de API Testing"
-                        >
-
-                            <span class="chip tool-chip">
-                                Postman
-                            </span>
-
-                            <span class="chip">
-                                REST API
-                            </span>
-
-                            <span class="chip">
-                                HTTP
-                            </span>
-
-                            <span class="chip">
-                                JSON
-                            </span>
-
-                        </div>
-
-                    </article>
-
-
-                    <!-- ANÁLISIS Y CALIDAD -->
-
-                    <article class="skill-card">
-
-                        <h3>
-                            Análisis y calidad
-                        </h3>
-
-                        <div
-                            class="chip-list"
-                            aria-label="Habilidades de análisis y calidad"
-                        >
-
-                            <span class="chip">
-                                Requirements Analysis
-                            </span>
-
-                            <span class="chip">
+                            <span>
                                 Bug Reporting
                             </span>
 
-                            <span class="chip tool-chip">
+                        </div>
 
-                                <i
-                                    class="fa-brands fa-jira"
-                                    aria-hidden="true"
-                                ></i>
+                    </article>
 
-                                Jira
 
+                    <!-- API -->
+
+                    <article class="skill-group">
+
+                        <div class="skill-group-header">
+
+                            <div class="skill-icon api">
+
+                                <i class="fa-solid fa-code"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    API Testing
+                                </h3>
+
+                                <p>
+                                    Validación de servicios REST
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-chips">
+
+                            <span>
+                                <i class="fa-solid fa-paper-plane"></i>
+                                Postman
                             </span>
 
-                            <span class="chip">
-                                Browser DevTools
+                            <span>
+                                REST API
+                            </span>
+
+                            <span>
+                                JSON
+                            </span>
+
+                            <span>
+                                HTTP
+                            </span>
+
+                            <span>
+                                Status Codes
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- TEST DESIGN -->
+
+                    <article class="skill-group">
+
+                        <div class="skill-group-header">
+
+                            <div class="skill-icon design">
+
+                                <i class="fa-solid fa-diagram-project"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Diseño de pruebas
+                                </h3>
+
+                                <p>
+                                    Técnicas de análisis
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-chips">
+
+                            <span>
+                                Equivalence Partitioning
+                            </span>
+
+                            <span>
+                                Boundary Value Analysis
+                            </span>
+
+                            <span>
+                                Decision Tables
+                            </span>
+
+                            <span>
+                                Pairwise Testing
+                            </span>
+
+                            <span>
+                                Checklists
                             </span>
 
                         </div>
@@ -457,42 +621,107 @@
 
                     <!-- HERRAMIENTAS -->
 
-                    <article class="skill-card">
+                    <article class="skill-group">
 
-                        <h3>
-                            Herramientas y metodologías
-                        </h3>
+                        <div class="skill-group-header">
 
-                        <div
-                            class="chip-list"
-                            aria-label="Herramientas y metodologías"
-                        >
+                            <div class="skill-icon tools">
 
-                            <span class="chip">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Herramientas
+                                </h3>
+
+                                <p>
+                                    Trabajo y documentación
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-chips">
+
+                            <span>
+                                <i class="fa-brands fa-jira"></i>
+                                Jira
+                            </span>
+
+                            <span>
+                                <i class="fa-brands fa-git-alt"></i>
+                                Git
+                            </span>
+
+                            <span>
+                                GitHub
+                            </span>
+
+                            <span>
+                                DevTools
+                            </span>
+
+                            <span>
                                 SQL
                             </span>
 
-                            <span class="chip">
-                                Agile
+                        </div>
+
+                    </article>
+
+
+                    <!-- INNOVACIÓN -->
+
+                    <article class="skill-group">
+
+                        <div class="skill-group-header">
+
+                            <div class="skill-icon innovation">
+
+                                <i class="fa-solid fa-lightbulb"></i>
+
+                            </div>
+
+                            <div>
+
+                                <h3>
+                                    Innovación y producto
+                                </h3>
+
+                                <p>
+                                    Investigación y soluciones digitales
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="skill-chips">
+
+                            <span>
+                                Research
                             </span>
 
-                            <span class="chip">
-                                Scrum
+                            <span>
+                                UX
                             </span>
 
-                            <span class="chip tool-chip">
-
-                                <i
-                                    class="fa-brands fa-github"
-                                    aria-hidden="true"
-                                ></i>
-
-                                GitHub
-
+                            <span>
+                                Accessibility
                             </span>
 
-                            <span class="chip">
-                                AI-Assisted QA
+                            <span>
+                                MVP
+                            </span>
+
+                            <span>
+                                Product Thinking
                             </span>
 
                         </div>
@@ -504,23 +733,43 @@
             </section>
 
 
-            <!-- =========================
-                 PROYECTOS DESTACADOS
-            ========================== -->
+            <!-- =====================================
+                 PROYECTOS
+            ========================================== -->
 
             <section
                 id="proyectos"
                 class="content-section"
-                aria-labelledby="proyectos-title"
             >
 
                 <div class="section-heading">
 
-                    <h2 id="proyectos-title">
-                        Proyectos destacados
-                    </h2>
+                    <span class="section-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p class="section-kicker">
+                            EXPERIENCIA PRÁCTICA
+                        </p>
+
+                        <h2>
+                            Proyectos destacados
+                        </h2>
+
+                    </div>
 
                 </div>
+
+
+                <p class="section-intro">
+
+                    Una selección de proyectos en los que he aplicado
+                    técnicas de testing, análisis, documentación y
+                    validación de productos digitales.
+
+                </p>
 
 
                 <div class="projects-grid">
@@ -532,48 +781,76 @@
 
                         <div class="project-thumbnail">
 
-                            <img
-                                src="assets/projects/funcionales-portada.png"
-                                alt="Vista previa del proyecto de pruebas funcionales y diseño de pruebas"
-                            >
+                            <!--
+                            Reemplaza la ruta cuando agregues
+                            la imagen correspondiente.
+                            -->
+
+                            <div class="project-thumbnail-placeholder">
+
+                                <i class="fa-solid fa-clipboard-check"></i>
+
+                            </div>
 
                         </div>
 
 
                         <div class="project-card-body">
 
+                            <span class="project-category">
+
+                                QA TESTING
+
+                            </span>
+
+
                             <h3>
-                                Pruebas funcionales y diseño de pruebas
+
+                                Pruebas funcionales y diseño
+                                de pruebas
+
                             </h3>
 
+
                             <p>
-                                Validación de flujos de reserva mediante casos de prueba funcionales y técnicas de diseño.
+
+                                Diseño y ejecución de escenarios
+                                para validar funcionalidades,
+                                flujos y comportamiento de una
+                                aplicación web.
+
                             </p>
 
+
+                            <div class="project-tags">
+
+                                <span>Functional Testing</span>
+
+                                <span>Test Cases</span>
+
+                                <span>Jira</span>
+
+                                <span>DevTools</span>
+
+                            </div>
+
+
+                            <button
+                                class="project-button"
+                                type="button"
+                                data-open-modal="modal-functional"
+                            >
+
+                                Ver proyecto
+
+                                <i
+                                    class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
                         </div>
-
-
-                        <div
-                            class="project-tags"
-                            aria-label="Herramientas y aptitudes"
-                        >
-
-                            <span>Functional Testing</span>
-                            <span>Test Cases</span>
-                            <span>Jira</span>
-                            <span>DevTools</span>
-
-                        </div>
-
-
-                        <button
-                            class="project-open"
-                            type="button"
-                            data-open-modal="modal-funcionales"
-                            aria-haspopup="dialog"
-                        >
-                            Ver proyecto
-                        </button>
 
                     </article>
 
@@ -584,49 +861,67 @@
 
                         <div class="project-thumbnail">
 
-                            <img
-                                src="assets/projects/api-portada.png"
-                                alt="Vista previa del proyecto de pruebas de API REST"
-                            >
+                            <div class="project-thumbnail-placeholder">
+
+                                <i class="fa-solid fa-code"></i>
+
+                            </div>
 
                         </div>
 
 
                         <div class="project-card-body">
 
+                            <span class="project-category">
+
+                                API TESTING
+
+                            </span>
+
+
                             <h3>
                                 Pruebas de API REST
                             </h3>
 
+
                             <p>
-                                Diseño y ejecución de escenarios para validar endpoints REST, datos JSON y reglas de negocio.
+
+                                Validación de endpoints,
+                                estructura JSON, códigos HTTP
+                                y reglas de negocio.
+
                             </p>
 
+
+                            <div class="project-tags">
+
+                                <span>Postman</span>
+
+                                <span>REST API</span>
+
+                                <span>JSON</span>
+
+                                <span>HTTP</span>
+
+                            </div>
+
+
+                            <button
+                                class="project-button"
+                                type="button"
+                                data-open-modal="modal-api"
+                            >
+
+                                Ver proyecto
+
+                                <i
+                                    class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
                         </div>
-
-
-                        <div
-                            class="project-tags"
-                            aria-label="Herramientas y aptitudes"
-                        >
-
-                            <span>Postman</span>
-                            <span>API Testing</span>
-                            <span>REST API</span>
-                            <span>JSON</span>
-                            <span>HTTP</span>
-
-                        </div>
-
-
-                        <button
-                            class="project-open"
-                            type="button"
-                            data-open-modal="modal-api"
-                            aria-haspopup="dialog"
-                        >
-                            Ver proyecto
-                        </button>
 
                     </article>
 
@@ -637,49 +932,69 @@
 
                         <div class="project-thumbnail">
 
-                            <img
-                                src="assets/projects/visualsc-portada.png"
-                                alt="Vista previa del proyecto VisualSC"
-                            >
+                            <div class="project-thumbnail-placeholder">
+
+                                <i class="fa-solid fa-hands-asl-interpreting"></i>
+
+                            </div>
 
                         </div>
 
 
                         <div class="project-card-body">
 
+                            <span class="project-category">
+
+                                INNOVACIÓN
+
+                            </span>
+
+
                             <h3>
                                 VisualSC
                             </h3>
 
+
                             <p>
-                                Plataforma accesible enfocada en comunicación mediante Lengua de Señas Colombiana.
+
+                                Plataforma accesible enfocada
+                                en mejorar la comunicación mediante
+                                Lengua de Señas Colombiana.
+
                             </p>
 
+
+                            <div class="project-tags">
+
+                                <span>QA</span>
+
+                                <span>Research</span>
+
+                                <span>UX</span>
+
+                                <span>Accessibility</span>
+
+                                <span>MVP</span>
+
+                            </div>
+
+
+                            <button
+                                class="project-button"
+                                type="button"
+                                data-open-modal="modal-visualsc"
+                            >
+
+                                Ver proyecto
+
+                                <i
+                                    class="fa-solid fa-arrow-right"
+                                    aria-hidden="true"
+                                ></i>
+
+                            </button>
+
                         </div>
-
-
-                        <div
-                            class="project-tags"
-                            aria-label="Herramientas y aptitudes"
-                        >
-
-                            <span>QA</span>
-                            <span>Research</span>
-                            <span>UX</span>
-                            <span>Accessibility</span>
-                            <span>MVP</span>
-
-                        </div>
-
-
-                        <button
-                            class="project-open"
-                            type="button"
-                            data-open-modal="modal-visualsc"
-                            aria-haspopup="dialog"
-                        >
-                            Ver proyecto
-                        </button>
 
                     </article>
 
@@ -688,116 +1003,77 @@
             </section>
 
 
-            <!-- =========================
+            <!-- =====================================
                  CV
-            ========================== -->
+            ========================================== -->
 
             <section
                 id="cv"
-                class="content-section cv-section"
-                aria-labelledby="cv-title"
+                class="content-section"
             >
 
-                <h2 id="cv-title">
-                    CV
-                </h2>
+                <div class="section-heading">
 
-                <p>
-                    Consulta mi experiencia, formación y proyectos.
-                </p>
+                    <span class="section-number">
+                        04
+                    </span>
 
-                <a
-                    href="https://heilenparra.github.io/assets/cv-heilen-parra.pdf"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    class="cv-button"
-                >
+                    <div>
 
-                    <i
-                        class="fa-solid fa-file-arrow-down"
-                        aria-hidden="true"
-                    ></i>
+                        <p class="section-kicker">
+                            PERFIL PROFESIONAL
+                        </p>
 
-                    Descargar CV
+                        <h2>
+                            CV
+                        </h2>
 
-                </a>
+                    </div>
 
-            </section>
+                </div>
 
 
-            <!-- =========================
-                 CONTACTO
-            ========================== -->
+                <div class="cv-card">
 
-            <section
-                id="contacto"
-                class="content-section contact-section"
-                aria-labelledby="contacto-title"
-            >
+                    <div>
 
-                <h2 id="contacto-title">
-                    Contacto
-                </h2>
+                        <span class="cv-icon">
 
-                <p class="text-block">
-                    Actualmente estoy desarrollando mi experiencia como QA Engineer y estoy abierta a oportunidades donde pueda contribuir al aseguramiento de la calidad del software, el análisis de requisitos, las pruebas funcionales y las pruebas de API.
-                </p>
+                            <i class="fa-solid fa-file-lines"></i>
+
+                        </span>
 
 
-                <div
-                    class="contact-links"
-                    aria-label="Enlaces de contacto"
-                >
+                        <div>
+
+                            <h3>
+                                Hoja de vida profesional
+                            </h3>
+
+                            <p>
+                                Consulta mi experiencia,
+                                formación y habilidades.
+                            </p>
+
+                        </div>
+
+                    </div>
 
 
-                    <!-- LINKEDIN -->
-
-                    <a
-                        href="https://www.linkedin.com/in/heilenparra/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-
-                        <i
-                            class="fa-brands fa-linkedin"
-                            aria-hidden="true"
-                        ></i>
-
-                        LinkedIn
-
-                    </a>
-
-
-                    <!-- GITHUB -->
+                    <!--
+                    CAMBIA cv.pdf POR LA RUTA
+                    DEL ARCHIVO CUANDO LO SUBAS
+                    -->
 
                     <a
-                        href="https://github.com/heilenparra"
-                        target="_blank"
-                        rel="noopener noreferrer"
+                        href="#"
+                        class="cv-button"
+                        aria-disabled="true"
                     >
 
-                        <i
-                            class="fa-brands fa-github"
-                            aria-hidden="true"
-                        ></i>
+                        Ver CV
 
-                        GitHub
-
-                    </a>
-
-
-                    <!-- CORREO -->
-
-                    <a
-                        href="mailto:heilenparra03@gmail.com"
-                    >
-
-                        <i
-                            class="fa-solid fa-envelope"
-                            aria-hidden="true"
-                        ></i>
-
-                        Correo
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
                     </a>
 
@@ -806,17 +1082,82 @@
             </section>
 
 
-            <!-- =========================
-                 FOOTER
-            ========================== -->
+            <!-- =====================================
+                 CONTACTO
+            ========================================== -->
 
-            <footer class="main-footer">
+            <section
+                id="contacto"
+                class="content-section contact-section"
+            >
 
-                <p>
-                    Diseñado y desarrollado por
-                    <strong>Heilen Parra</strong>
-                    · QA Engineer
-                </p>
+                <div class="contact-card">
+
+                    <div>
+
+                        <p class="section-kicker">
+                            CONTACTO
+                        </p>
+
+                        <h2>
+                            ¿Hablamos?
+                        </h2>
+
+                        <p>
+
+                            Estoy disponible para conectar,
+                            colaborar y conversar sobre
+                            oportunidades relacionadas con QA,
+                            tecnología e innovación.
+
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-actions">
+
+                        <a
+                            href="mailto:heilenparra03@gmail.com"
+                            class="contact-primary"
+                        >
+
+                            <i class="fa-solid fa-envelope"></i>
+
+                            Escribirme
+
+                        </a>
+
+
+                        <a
+                            href="https://www.linkedin.com/in/heilenparra/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="contact-secondary"
+                        >
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+
+                            LinkedIn
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <footer class="site-footer">
+
+                <span>
+                    © 2026 Heilen Parra
+                </span>
+
+                <span>
+                    Diseñado y desarrollado con HTML + CSS
+                </span>
 
             </footer>
 
@@ -825,14 +1166,14 @@
     </div>
 
 
-    <!-- ========================================
+    <!-- =============================================
          MODAL PROYECTO 1
-    ========================================= -->
+    ============================================== -->
 
     <dialog
         class="project-modal"
-        id="modal-funcionales"
-        aria-labelledby="modal-funcionales-title"
+        id="modal-functional"
+        aria-labelledby="functional-title"
     >
 
         <div class="modal-card">
@@ -841,15 +1182,28 @@
                 class="modal-close"
                 type="button"
                 data-close-modal
-                aria-label="Cerrar detalle"
+                aria-label="Cerrar proyecto"
             >
-                Cerrar
+
+                <i class="fa-solid fa-xmark"></i>
+
             </button>
 
 
-            <h2 id="modal-funcionales-title">
-                Pruebas funcionales y diseño de pruebas
-            </h2>
+            <div class="modal-heading">
+
+                <span>
+                    QA TESTING
+                </span>
+
+                <h2 id="functional-title">
+
+                    Pruebas funcionales y diseño
+                    de pruebas
+
+                </h2>
+
+            </div>
 
 
             <div class="modal-section">
@@ -859,7 +1213,11 @@
                 </h3>
 
                 <p>
-                    Diseño y ejecución de casos de prueba funcionales para validar flujos de reserva en una aplicación web.
+
+                    Diseño y ejecución de casos de prueba
+                    funcionales para validar flujos de reserva
+                    y comportamiento de una aplicación web.
+
                 </p>
 
             </div>
@@ -890,11 +1248,11 @@
                     </li>
 
                     <li>
-                        Identificación y documentación de defectos funcionales y de interfaz.
+                        Diseño y ejecución de casos de prueba.
                     </li>
 
                     <li>
-                        Documentación con pasos de reproducción, resultados esperados y evidencias.
+                        Identificación y documentación de defectos.
                     </li>
 
                 </ul>
@@ -902,47 +1260,20 @@
             </div>
 
 
-            <!-- GALERÍA -->
-
             <div class="modal-section">
 
                 <h3>
-                    Galería del proyecto
+                    Herramientas
                 </h3>
 
-                <div class="project-gallery">
-
-                    <img
-                        src="assets/projects/funcionales-1.png"
-                        alt="Evidencia del proyecto de pruebas funcionales"
-                    >
-
-                    <img
-                        src="assets/projects/funcionales-2.png"
-                        alt="Casos de prueba del proyecto"
-                    >
-
-                    <img
-                        src="assets/projects/funcionales-3.png"
-                        alt="Documentación de pruebas del proyecto"
-                    >
-
-                </div>
-
-            </div>
-
-
-            <div class="modal-section">
-
-                <h3>
-                    Aptitudes / herramientas
-                </h3>
-
-                <div class="project-tags">
+                <div class="modal-tags">
 
                     <span>Functional Testing</span>
+
                     <span>Test Cases</span>
+
                     <span>Jira</span>
+
                     <span>DevTools</span>
 
                 </div>
@@ -950,29 +1281,72 @@
             </div>
 
 
-            <!-- EVIDENCIAS -->
-
             <div class="modal-section evidence-section">
 
                 <h3>
-                    Documentación y evidencias
+                    Evidencias
                 </h3>
+
+                <p>
+
+                    Aquí puedes agregar posteriormente
+                    enlaces a documentación, casos de prueba
+                    y evidencias del proyecto.
+
+                </p>
+
+
+                <!-- REEMPLAZA # POR TU ENLACE -->
 
                 <a
                     href="#"
+                    class="evidence-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="evidence-link"
                 >
 
-                    <i
-                        class="fa-solid fa-arrow-up-right-from-square"
-                        aria-hidden="true"
-                    ></i>
+                    <i class="fa-solid fa-link"></i>
 
-                    Ver documentación y evidencias
+                    Ver evidencias del proyecto
 
                 </a>
+
+            </div>
+
+
+            <div class="modal-gallery">
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>
+                        Agregar imagen
+                    </span>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>
+                        Agregar imagen
+                    </span>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>
+                        Agregar imagen
+                    </span>
+
+                </div>
 
             </div>
 
@@ -981,14 +1355,14 @@
     </dialog>
 
 
-    <!-- ========================================
+    <!-- =============================================
          MODAL PROYECTO 2
-    ========================================= -->
+    ============================================== -->
 
     <dialog
         class="project-modal"
         id="modal-api"
-        aria-labelledby="modal-api-title"
+        aria-labelledby="api-title"
     >
 
         <div class="modal-card">
@@ -997,15 +1371,25 @@
                 class="modal-close"
                 type="button"
                 data-close-modal
-                aria-label="Cerrar detalle"
+                aria-label="Cerrar proyecto"
             >
-                Cerrar
+
+                <i class="fa-solid fa-xmark"></i>
+
             </button>
 
 
-            <h2 id="modal-api-title">
-                Pruebas de API REST
-            </h2>
+            <div class="modal-heading">
+
+                <span>
+                    API TESTING
+                </span>
+
+                <h2 id="api-title">
+                    Pruebas de API REST
+                </h2>
+
+            </div>
 
 
             <div class="modal-section">
@@ -1015,11 +1399,11 @@
                 </h3>
 
                 <p>
-                    Diseño y ejecución de escenarios de API Testing para validar endpoints REST, métodos HTTP, parámetros y cuerpos de solicitud en formato JSON.
-                </p>
 
-                <p>
-                    En el contexto de Urban.Scooter, validé la calidad de una aplicación web y móvil para el alquiler de scooters eléctricos. Analicé los requisitos funcionales, diseñé pruebas aplicando técnicas como partición de equivalencias y valores límite, y validé la integración de datos con Postman y DevTools, asegurando precisión en los flujos backend y front-end. Este trabajo me permitió optimizar pruebas funcionales y de UI y documentar hallazgos en JIRA.
+                    Diseño y ejecución de pruebas para
+                    validar endpoints REST, datos JSON,
+                    códigos de respuesta y reglas de negocio.
+
                 </p>
 
             </div>
@@ -1038,19 +1422,23 @@
                     </li>
 
                     <li>
-                        Revisión de métodos HTTP, parámetros, Request Body y JSON.
+                        Diseño de escenarios positivos y negativos.
                     </li>
 
                     <li>
-                        Cobertura de escenarios positivos y negativos.
+                        Validación de datos JSON.
                     </li>
 
                     <li>
-                        Validación de valores inválidos, códigos de respuesta y mensajes de error.
+                        Análisis de códigos HTTP.
                     </li>
 
                     <li>
-                        Verificación de campos obligatorios y reglas de negocio.
+                        Pruebas de reglas de negocio.
+                    </li>
+
+                    <li>
+                        Identificación de errores en la API.
                     </li>
 
                 </ul>
@@ -1061,70 +1449,17 @@
             <div class="modal-section">
 
                 <h3>
-                    Resultados destacados
+                    Herramientas
                 </h3>
 
-                <ul>
-
-                    <li>
-                        Diseñé y ejecuté 54 casos de prueba para validaciones de API.
-                    </li>
-
-                    <li>
-                        Probé 4 endpoints utilizando Postman.
-                    </li>
-
-                    <li>
-                        Reporté 22 errores documentados en JIRA y priorizados según severidad.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- GALERÍA -->
-
-            <div class="modal-section">
-
-                <h3>
-                    Galería del proyecto
-                </h3>
-
-                <div class="project-gallery">
-
-                    <img
-                        src="assets/projects/api-1.png"
-                        alt="Evidencia de pruebas de API"
-                    >
-
-                    <img
-                        src="assets/projects/api-2.png"
-                        alt="Colección o solicitud de Postman"
-                    >
-
-                    <img
-                        src="assets/projects/api-3.png"
-                        alt="Resultado de pruebas de API"
-                    >
-
-                </div>
-
-            </div>
-
-
-            <div class="modal-section">
-
-                <h3>
-                    Aptitudes / herramientas
-                </h3>
-
-                <div class="project-tags">
+                <div class="modal-tags">
 
                     <span>Postman</span>
-                    <span>API Testing</span>
+
                     <span>REST API</span>
+
                     <span>JSON</span>
+
                     <span>HTTP</span>
 
                 </div>
@@ -1132,29 +1467,55 @@
             </div>
 
 
-            <!-- EVIDENCIAS -->
-
             <div class="modal-section evidence-section">
 
                 <h3>
-                    Documentación y evidencias
+                    Evidencias
                 </h3>
 
                 <a
                     href="#"
+                    class="evidence-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="evidence-link"
                 >
 
-                    <i
-                        class="fa-solid fa-arrow-up-right-from-square"
-                        aria-hidden="true"
-                    ></i>
+                    <i class="fa-solid fa-link"></i>
 
-                    Ver documentación y evidencias
+                    Ver evidencias del proyecto
 
                 </a>
+
+            </div>
+
+
+            <div class="modal-gallery">
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>Agregar imagen</span>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>Agregar imagen</span>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>Agregar imagen</span>
+
+                </div>
 
             </div>
 
@@ -1163,14 +1524,14 @@
     </dialog>
 
 
-    <!-- ========================================
-         MODAL PROYECTO 3
-    ========================================= -->
+    <!-- =============================================
+         MODAL VISUALSC
+    ============================================== -->
 
     <dialog
         class="project-modal"
         id="modal-visualsc"
-        aria-labelledby="modal-visualsc-title"
+        aria-labelledby="visualsc-title"
     >
 
         <div class="modal-card">
@@ -1179,15 +1540,25 @@
                 class="modal-close"
                 type="button"
                 data-close-modal
-                aria-label="Cerrar detalle"
+                aria-label="Cerrar proyecto"
             >
-                Cerrar
+
+                <i class="fa-solid fa-xmark"></i>
+
             </button>
 
 
-            <h2 id="modal-visualsc-title">
-                VisualSC
-            </h2>
+            <div class="modal-heading">
+
+                <span>
+                    INNOVACIÓN Y ACCESIBILIDAD
+                </span>
+
+                <h2 id="visualsc-title">
+                    VisualSC
+                </h2>
+
+            </div>
 
 
             <div class="modal-section">
@@ -1197,7 +1568,11 @@
                 </h3>
 
                 <p>
-                    Plataforma de comunicación accesible enfocada en Lengua de Señas Colombiana.
+
+                    Plataforma enfocada en mejorar la
+                    comunicación y accesibilidad mediante
+                    Lengua de Señas Colombiana.
+
                 </p>
 
             </div>
@@ -1212,27 +1587,23 @@
                 <ul>
 
                     <li>
-                        Investigación del problema.
+                        Investigación del problema y necesidades.
                     </li>
 
                     <li>
-                        Definición de requisitos.
+                        Participación en la definición del MVP.
                     </li>
 
                     <li>
-                        Prototipado.
+                        Análisis de experiencia de usuario.
                     </li>
 
                     <li>
-                        Desarrollo.
+                        Validación de criterios de accesibilidad.
                     </li>
 
                     <li>
-                        Pruebas.
-                    </li>
-
-                    <li>
-                        Despliegue.
+                        Participación en el desarrollo y validación.
                     </li>
 
                 </ul>
@@ -1243,66 +1614,19 @@
             <div class="modal-section">
 
                 <h3>
-                    Resultados destacados
+                    Herramientas y enfoques
                 </h3>
 
-                <ul>
-
-                    <li>
-                        Primer puesto en Hackabox Bogotá y regional.
-                    </li>
-
-                    <li>
-                        Seleccionado para Emerging Tech - Gofest 2026.
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-            <!-- GALERÍA -->
-
-            <div class="modal-section">
-
-                <h3>
-                    Galería del proyecto
-                </h3>
-
-                <div class="project-gallery">
-
-                    <img
-                        src="assets/projects/visualsc-1.png"
-                        alt="Vista del proyecto VisualSC"
-                    >
-
-                    <img
-                        src="assets/projects/visualsc-2.png"
-                        alt="Prototipo de VisualSC"
-                    >
-
-                    <img
-                        src="assets/projects/visualsc-3.png"
-                        alt="Evidencia del proyecto VisualSC"
-                    >
-
-                </div>
-
-            </div>
-
-
-            <div class="modal-section">
-
-                <h3>
-                    Aptitudes / herramientas
-                </h3>
-
-                <div class="project-tags">
+                <div class="modal-tags">
 
                     <span>QA</span>
+
                     <span>Research</span>
+
                     <span>UX</span>
+
                     <span>Accessibility</span>
+
                     <span>MVP</span>
 
                 </div>
@@ -1310,29 +1634,55 @@
             </div>
 
 
-            <!-- EVIDENCIAS -->
-
             <div class="modal-section evidence-section">
 
                 <h3>
-                    Documentación y evidencias
+                    Evidencias
                 </h3>
 
                 <a
                     href="#"
+                    class="evidence-link"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="evidence-link"
                 >
 
-                    <i
-                        class="fa-solid fa-arrow-up-right-from-square"
-                        aria-hidden="true"
-                    ></i>
+                    <i class="fa-solid fa-link"></i>
 
-                    Ver documentación y evidencias
+                    Ver evidencias del proyecto
 
                 </a>
+
+            </div>
+
+
+            <div class="modal-gallery">
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>Agregar imagen</span>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>Agregar imagen</span>
+
+                </div>
+
+
+                <div class="gallery-placeholder">
+
+                    <i class="fa-regular fa-image"></i>
+
+                    <span>Agregar imagen</span>
+
+                </div>
 
             </div>
 
@@ -1341,104 +1691,93 @@
     </dialog>
 
 
-    <!-- =========================
-         JAVASCRIPT MODALES
-    ========================== -->
+    <!-- =============================================
+         JAVASCRIPT PARA MODALES
+    ============================================== -->
 
     <script>
 
-        const openModalButtons =
+        const openButtons =
             document.querySelectorAll("[data-open-modal]");
 
-        const closeModalButtons =
+
+        const closeButtons =
             document.querySelectorAll("[data-close-modal]");
 
-        let lastFocusedElement = null;
 
-
-        /* ABRIR MODAL */
-
-        openModalButtons.forEach((button) => {
+        openButtons.forEach((button) => {
 
             button.addEventListener("click", () => {
 
-                const dialog =
-                    document.getElementById(
-                        button.dataset.openModal
-                    );
+                const modalId =
+                    button.dataset.openModal;
 
-                if (!dialog) {
-                    return;
+                const modal =
+                    document.getElementById(modalId);
+
+                if (modal) {
+                    modal.showModal();
                 }
 
-                lastFocusedElement = button;
-
-                dialog.showModal();
-
-                dialog
-                    .querySelector("[data-close-modal]")
-                    ?.focus();
-
             });
 
         });
 
 
-        /* CERRAR MODAL */
-
-        closeModalButtons.forEach((button) => {
+        closeButtons.forEach((button) => {
 
             button.addEventListener("click", () => {
 
-                button
-                    .closest("dialog")
-                    ?.close();
+                const modal =
+                    button.closest("dialog");
+
+                if (modal) {
+                    modal.close();
+                }
 
             });
 
         });
 
-
-        /* CERRAR AL HACER CLIC FUERA */
 
         document
             .querySelectorAll(".project-modal")
-            .forEach((dialog) => {
+            .forEach((modal) => {
 
-                dialog.addEventListener(
-                    "click",
-                    (event) => {
+                modal.addEventListener("click", (event) => {
 
-                        const card =
-                            dialog.querySelector(".modal-card");
-
-                        if (
-                            card &&
-                            !card.contains(event.target)
-                        ) {
-
-                            dialog.close();
-
-                        }
-
+                    if (
+                        event.target === modal
+                    ) {
+                        modal.close();
                     }
-                );
 
-
-                dialog.addEventListener(
-                    "close",
-                    () => {
-
-                        lastFocusedElement?.focus();
-
-                    }
-                );
+                });
 
             });
+
+
+        document.addEventListener(
+            "keydown",
+            (event) => {
+
+                if (event.key === "Escape") {
+
+                    document
+                        .querySelectorAll(".project-modal[open]")
+                        .forEach((modal) => {
+
+                            modal.close();
+
+                        });
+
+                }
+
+            }
+        );
 
     </script>
 
 </body>
-
 </html>
 
