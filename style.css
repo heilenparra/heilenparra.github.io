@@ -64,10 +64,8 @@ body {
     color: var(--text);
 
     font-family:
-        "Inter
-        ",
-        Arial,
-        sans-serif;
+    'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size: 16px;
     line-height: 1.65;
@@ -174,10 +172,9 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+
+    'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size:
         clamp(
@@ -404,10 +401,8 @@ img {
     color: var(--accent);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+     'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size: 0.72rem;
 
@@ -423,10 +418,8 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+      'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size:
         clamp(
@@ -520,10 +513,8 @@ img {
     color: var(--accent);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+        'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size: 0.75rem;
 
@@ -537,10 +528,8 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+     'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size:
         clamp(
@@ -663,10 +652,8 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+       'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size: 0.82rem;
 
@@ -859,10 +846,8 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+      'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size: 1rem;
 
@@ -1128,10 +1113,8 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+      'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size:
         clamp(
@@ -1167,10 +1150,8 @@ img {
     color: var(--primary-dark);
 
     font-family:
-        "Montserrat
-        ",
-        Arial,
-        sans-serif;
+      'Times New Roman', Times, serif,
+    sans-serif;
 
     font-size: 0.92rem;
 
