@@ -9,33 +9,33 @@
 ========================================================= */
 
 :root {
-    --bg: #f5f1eb;
-    --surface: #fffdfa;
-    --surface-soft: #f0ebe3;
-    --surface-alt: #e9e1d6;
+    --bg: #F4EEE4;
+    --surface: #FFFDF8;
+    --surface-soft: #EDE3D3;
+    --surface-alt: #E3D5C3;
 
-    --sidebar: #f8f4ee;
+    --sidebar: #F8F3EA;
 
-    --text: #2e2a27;
-    --text-muted: #706963;
-    --text-light: #968d85;
+    --text: #173F4A;
+    --text-muted: #607177;
+    --text-light: #8FA0A4;
 
-    --primary: #31485a;
-    --primary-dark: #233845;
-    --primary-soft: #dce5e8;
+    --primary: #173F4A;
+    --primary-dark: #102F38;
+    --primary-soft: #DCE8E8;
 
-    --accent: #a9685d;
-    --accent-dark: #8d5148;
-    --accent-soft: #ead6d0;
+    --accent: #C88462;
+    --accent-dark: #A9684F;
+    --accent-soft: #F1DED2;
 
-    --gold: #b28a56;
-    --gold-soft: #efe3cf;
+    --gold: #B99B78;
+    --gold-soft: #E9DDCD;
 
-    --border: #ddd4c9;
-    --border-strong: #cfc3b5;
+    --border: #DDD1C1;
+    --border-strong: #CDBEAB;
 
-    --shadow-sm: 0 8px 20px rgba(46, 42, 39, 0.05);
-    --shadow: 0 16px 34px rgba(46, 42, 39, 0.08);
+    --shadow-sm: 0 8px 20px rgba(23, 63, 74, 0.06);
+    --shadow: 0 16px 34px rgba(23, 63, 74, 0.09);
 
     --radius-sm: 10px;
     --radius: 16px;
